@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminLayoutController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Context\BurgerMenuContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -1606,6 +1607,7 @@
     <Content Include="Areas\Admin\Views\AdminLayout\PartialHead.cshtml" />
     <Content Include="Areas\Admin\Views\AdminLayout\PartialNavbar.cshtml" />
     <Content Include="Areas\Admin\Views\AdminLayout\PartialSidebar.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
