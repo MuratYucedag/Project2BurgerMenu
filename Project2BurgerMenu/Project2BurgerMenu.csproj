@@ -1603,6 +1603,9 @@
     <Content Include="regal\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\AdminLayout\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminLayout\PartialHead.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminLayout\PartialNavbar.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminLayout\PartialSidebar.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
