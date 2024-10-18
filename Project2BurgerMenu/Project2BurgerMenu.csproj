@@ -158,6 +158,10 @@
     <Compile Include="Migrations\202410151130220_mig3.designer.cs">
       <DependentUpon>202410151130220_mig3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202410181120581_mig4.cs" />
+    <Compile Include="Migrations\202410181120581_mig4.designer.cs">
+      <DependentUpon>202410181120581_mig4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1714,6 +1718,7 @@
     <Content Include="Views\Default\PartialGallery.cshtml" />
     <Content Include="Views\Default\PartialFooter.cshtml" />
     <Content Include="Views\Default\PartialScripts.cshtml" />
+    <Content Include="Views\Default\PartialCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1761,6 +1766,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202410151130220_mig3.resx">
       <DependentUpon>202410151130220_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410181120581_mig4.resx">
+      <DependentUpon>202410181120581_mig4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -3,52 +3,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Project2BurgerMenu.Context;
+using Project2BurgerMenu.Entities;
 
 namespace Project2BurgerMenu.Controllers
 {
     public class DefaultController : Controller
     {
-        // GET: Default
+        BurgerMenuContext context = new BurgerMenuContext();
         public ActionResult Index()
         {
             return View();
         }
-
         public PartialViewResult PartialHead()
         {
             return PartialView();
         }
-
         public PartialViewResult PartialNavbar()
         {
             return PartialView();
         }
-
         public PartialViewResult PartialAbout()
         {
             return PartialView();
         }
-
         public PartialViewResult TodaysOffer()
         {
-            return PartialView();
+            var values = context.Products.Where(x => x.DealofTheDay == true).ToList();
+            return PartialView(values);
         }
-
         public PartialViewResult PartialMenu()
         {
-            return PartialView();
+            var values = context.Products.ToList();
+            return PartialView(values);
         }
 
+        public PartialViewResult PartialCategory()
+        {
+            var values = context.Categories.Take(6).ToList();
+            return PartialView(values);
+        }
         public PartialViewResult PartialGallery()
         {
             return PartialView();
         }
-
         public PartialViewResult PartialFooter()
         {
             return PartialView();
         }
-
         public PartialViewResult PartialScripts()
         {
             return PartialView();
