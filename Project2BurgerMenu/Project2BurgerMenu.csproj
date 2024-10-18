@@ -142,6 +142,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\DealOfTheDay.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Reservation.cs" />
     <Compile Include="Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -161,6 +162,10 @@
     <Compile Include="Migrations\202410181120581_mig4.cs" />
     <Compile Include="Migrations\202410181120581_mig4.designer.cs">
       <DependentUpon>202410181120581_mig4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202410181248500_mig5.cs" />
+    <Compile Include="Migrations\202410181248500_mig5.designer.cs">
+      <DependentUpon>202410181248500_mig5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1719,6 +1724,7 @@
     <Content Include="Views\Default\PartialFooter.cshtml" />
     <Content Include="Views\Default\PartialScripts.cshtml" />
     <Content Include="Views\Default\PartialCategory.cshtml" />
+    <Content Include="Views\Default\PartialReservation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1769,6 +1775,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202410181120581_mig4.resx">
       <DependentUpon>202410181120581_mig4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410181248500_mig5.resx">
+      <DependentUpon>202410181248500_mig5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
